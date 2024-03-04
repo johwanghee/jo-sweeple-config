@@ -6,8 +6,8 @@ if SHIELD_SWEEPLE_CENTRAL_DONGLE
 config ZMK_KEYBOARD_NAME
     default "Sweeple"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
 config ZMK_USB
     default y
