@@ -24,7 +24,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
 struct battery_status_state {
-    uint8_t level[ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS];
+    uint8_t level[CONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS];
 } battery_state;
 
 struct battery_widget_object {
@@ -33,7 +33,7 @@ struct battery_widget_object {
     lv_obj_t *battery_label;
 };
 
-struct battery_widget_object battery_widget_objects[ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS];
+struct battery_widget_object battery_widget_objects[CONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS];
 
 static void draw_battery(lv_obj_t *canvas, uint8_t level) {
     lv_canvas_fill_bg(canvas, lv_color_black(), LV_OPA_COVER);
@@ -64,7 +64,7 @@ static void draw_battery(lv_obj_t *canvas, uint8_t level) {
 
 static void set_battery_symbol(lv_obj_t *widged, struct battery_status_state state) {
 
-    for (int i = 0; i < ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS; i++) {
+    for (int i = 0; i < CONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS; i++) {
         uint8_t level = state.level[i];
         lv_obj_t *label = battery_widget_objects[i].battery_label;
         lv_obj_t *symbol = battery_widget_objects[i].battery_image_canvas;
@@ -102,7 +102,7 @@ int zmk_widget_peripheral_battery_status_init(struct zmk_widget_peripheral_batte
 
     lv_obj_set_size(widget->obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
-    for (int i = 0; i < ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS; i++) {
+    for (int i = 0; i < CONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS; i++) {
         battery_widget_objects[i].battery_image_canvas = lv_canvas_create(widget->obj);
         battery_widget_objects[i].battery_label = lv_label_create(widget->obj);
 
