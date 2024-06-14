@@ -19,21 +19,21 @@ layers:
   - {t: J, h: '4'}
   - {t: K, h: '2'}
   - {t: L, h: '6'}
-  - {t: ;, h: LSHFT}
+  - {t: ;, h: Shift}
   - Z
-  - {t: X, h: LCTRL}
-  - {t: C, h: LALT}
+  - {t: X, h: Ctrl}
+  - {t: C, h: Alt}
   - V
   - B
   - N
   - M
-  - {t: CMMA, h: LALT}
-  - {t: ., h: LCTRL}
+  - {t: CMMA, h: Alt}
+  - {t: ., h: Ctrl}
   - {t: /, h: '9'}
-  - SPACE
-  - {t: BSPC, h: LGUI}
-  - {t: SPACE, h: '7'}
-  - BSPC
+  - ␣
+  - {t: ⌫, h: Gui}
+  - {t: ␣, h: '7'}
+  - ⌫
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -49,7 +49,7 @@ layers:
   - F14
   - {type: held}
   - F15
-  - UP
+  - ↑
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -59,36 +59,36 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DOWN
+  - ↓
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TAB
+  - ↹
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '2':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
+  - ↑
   - {t: ▽, type: trans}
-  - PG UP
-  - HOME
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Page Up
+  - Home
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - PG DN
-  - END
-  - LGUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - →
+  - Page Down
+  - End
+  - Gui
   - {type: held}
-  - {t: LALT, h: LCTRL}
+  - {t: Alt, h: Ctrl}
   - {t: LSFT, h: Ctl+ A}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -187,8 +187,8 @@ layers:
   - F10
   - {t: ▽, type: trans}
   - {type: held}
-  - LCTRL
-  - LALT
+  - Ctrl
+  - Alt
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F4
@@ -248,13 +248,13 @@ layers:
   - Q
   - W
   - ':'
-  - ESC
+  - Esc
   - ''
-  - CAPS
-  - LANG2
-  - LANG1
+  - Caps Lock
+  - HANZA
+  - HANGUL
   - ''
-  - DEL
+  - ⌦
   - ''
   - ''
   - /
@@ -275,18 +275,18 @@ layers:
   - {t: '9', h: toggle}
   - ''
   - ''
-  - Sft+ TAB
-  - TAB
+  - Win Prev
+  - ↹
   - {type: held}
   - {t: ▽, type: trans}
   '8':
   - {type: held}
   - {t: ▽, type: trans}
-  - OUT USB
-  - OUT BLE
+  - USB
+  - BLE
   - '!'
-  - VOL UP
-  - VOL DN
+  - Vol Up
+  - Vol Down
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -311,17 +311,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - OUT TOG
-  - BT CLR
+  - BLE CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '9':
-  - ESC
+  - Esc
   - Q
   - W
   - R
   - T
-  - BT CLR
-  - OUT BLE
+  - BLE CLR
+  - BLE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
