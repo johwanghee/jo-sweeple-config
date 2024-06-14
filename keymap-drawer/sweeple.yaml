@@ -19,20 +19,20 @@ layers:
   - {t: J, h: '4'}
   - {t: K, h: '2'}
   - {t: L, h: '6'}
-  - {t: ;, h: LSHFT}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
-  - {t: X, h: LCTRL}
-  - {t: C, h: LALT}
+  - {t: X, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-option$$'}
   - V
   - B
   - N
   - M
-  - {t: CMMA, h: LALT}
-  - {t: ., h: LCTRL}
+  - {t: CMMA, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
   - {t: /, h: '9'}
-  - SPACE
-  - {t: BSPC, h: LGUI}
-  - {t: SPACE, h: '7'}
+  - $$mdi:keyboard-space$$
+  - {t: BSPC, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '7'}
   - BSPC
   '1':
   - {t: ▽, type: trans}
@@ -49,7 +49,7 @@ layers:
   - F14
   - {type: held}
   - F15
-  - UP
+  - $$mdi:arrow-up$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -59,36 +59,36 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DOWN
+  - $$mdi:arrow-down$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TAB
+  - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '2':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
+  - $$mdi:arrow-up$$
   - {t: ▽, type: trans}
   - PG UP
-  - HOME
+  - Home
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
   - PG DN
-  - END
-  - LGUI
+  - End
+  - $$mdi:apple-keyboard-command$$
   - {type: held}
-  - {t: LALT, h: LCTRL}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: LSFT, h: Ctl+ A}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -187,8 +187,8 @@ layers:
   - F10
   - {t: ▽, type: trans}
   - {type: held}
-  - LCTRL
-  - LALT
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F4
@@ -248,7 +248,7 @@ layers:
   - Q
   - W
   - ':'
-  - ESC
+  - Esc
   - ''
   - CAPS
   - LANG2
@@ -270,24 +270,24 @@ layers:
   - ''
   - '!'
   - ''
-  - {t: default, h: toggle}
-  - {t: '2', h: toggle}
-  - {t: '9', h: toggle}
+  - {t: default, h: '$$mdi:toggle-switch$$'}
+  - {t: '2', h: '$$mdi:toggle-switch$$'}
+  - {t: '9', h: '$$mdi:toggle-switch$$'}
   - ''
   - ''
-  - Sft+ TAB
-  - TAB
+  - Sft+ $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-tab$$
   - {type: held}
   - {t: ▽, type: trans}
   '8':
   - {type: held}
   - {t: ▽, type: trans}
-  - OUT USB
-  - OUT BLE
+  - {t: '$$mdi:keyboard$$', s: '$$mdi:usb$$', type: sym_by_sym}
+  - {t: '$$mdi:keyboard$$', s: '$$mdi:bluetooth$$', type: sym_by_sym}
   - '!'
-  - VOL UP
-  - VOL DN
-  - MUTE
+  - $$mdi:volume-plus$$
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-mute$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -301,8 +301,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT PRV
-  - BT NXT
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:skip-previous$$', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:skip-next$$', type: sym_sub_text}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -310,18 +310,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - OUT TOG
-  - BT CLR
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
+  - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '9':
-  - ESC
+  - Esc
   - Q
   - W
   - R
   - T
-  - BT CLR
-  - OUT BLE
+  - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
+  - {t: '$$mdi:keyboard$$', s: '$$mdi:bluetooth$$', type: sym_by_sym}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
