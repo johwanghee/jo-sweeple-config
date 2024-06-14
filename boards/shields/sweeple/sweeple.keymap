@@ -100,9 +100,9 @@
         
            9_layer {
         bindings = <
-        &kp ESC    &kp Q      &kp W      &kp R      &kp T         &bt BT_CLR  &out OUT_BLE  &trans     &trans     &trans
-        &kp LSFT   &kp A      &kp S      &kp D      &kp F         &trans      &trans        &trans     &trans     &trans
-        &kp Z      &none      &none      &none      &kp G         &trans      &trans        &trans     &trans     &none
+        &kp ESC     &kp Q      &kp W      &kp R      &kp T         &bt BT_CLR  &out OUT_BLE  &trans     &trans     &trans
+        &kp LSFT    &kp A      &kp S      &kp D      &kp F         &trans      &trans        &trans     &trans     &trans
+        &kp Z       &none      &none      &none      &kp G         &trans      &trans        &trans     &trans     &none
                                          &trans     &trans        &trans      &trans
         >;
         };
