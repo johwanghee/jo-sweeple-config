@@ -131,15 +131,15 @@
       
            8_layer {
         // ----------------------------------------------------------------------------------------------------------------------------------
-        // |  none   |  trans  |  OUT_USB  |  OUT_BLE  |    !    |  |  trans  |  trans  |  trans  |  trans  |  trans  |
+        // |  none   |  trans  |  OUT_USB  |  OUT_BLE  |    !    |  |  VOL_UP |  VOL_DN |  trans  |  MUTE   |  trans  |
         // |  trans  |  trans  |  trans    |  trans    |  trans  |  |  trans  |  trans  |  trans  |  trans  |  trans  |
         // |  trans  |  BT_PRV |  BT_NXT   |  trans    |  trans  |  |  trans  |  trans  |  trans  |  trans  |  trans  |
         //                                 |  OUT_TOG  |  BT_CLR |  |  trans  |  trans  |
         bindings = <
-        &none       &trans      &out OUT_USB  &out OUT_BLE  &kp EXCL       &trans      &trans      &trans      &trans      &trans
-        &trans      &trans      &trans        &trans        &trans         &trans      &trans      &trans      &trans      &trans
-        &trans      &bt BT_PRV  &bt BT_NXT    &trans        &trans         &trans      &trans      &trans      &trans      &trans
-                                              &out OUT_TOG  &bt BT_CLR     &trans      &trans
+        &none       &trans      &out OUT_USB  &out OUT_BLE  &kp EXCL       &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE  &trans      &trans
+        &trans      &trans      &trans        &trans        &trans         &trans       &trans       &trans      &trans      &trans
+        &trans      &bt BT_PRV  &bt BT_NXT    &trans        &trans         &trans       &trans       &trans      &trans      &trans
+                                              &out OUT_TOG  &bt BT_CLR     &trans       &trans
         >;
         };
         
@@ -150,10 +150,10 @@
         // |    Z    |  none   |  none   |  none   |    G    |  |  trans  |  trans  |  trans  |  trans  |  none   |
         //                               |  trans  |  trans  |  |  trans  |  trans  |
         bindings = <
-        &kp ESC    &kp Q      &kp W      &kp R      &kp T         &trans     &trans     &trans     &trans     &trans
-        &kp LSFT   &kp A      &kp S      &kp D      &kp F         &trans     &trans     &trans     &trans     &trans
-        &kp Z      &none      &none      &none      &kp G         &trans     &trans     &trans     &trans     &none
-                                         &trans     &trans        &bt BT_CLR     &out OUT_BLE
+        &kp ESC    &kp Q      &kp W      &kp R      &kp T         &bt BT_CLR  &out OUT_BLE &trans     &trans     &trans
+        &kp LSFT   &kp A      &kp S      &kp D      &kp F         &trans      &trans       &trans     &trans     &trans
+        &kp Z      &none      &none      &none      &kp G         &trans      &trans       &trans     &trans     &none
+                                         &trans     &trans        &trans      &trans
         >;
         };
         
