@@ -21,5 +21,4 @@ jobs:
       keymap_patterns: "boards/shields/sweeple/*.keymap"
       config_path: "keymap_drawer.config.yaml" 
       output_folder: "keymap-drawer"
-      parse_args: ""
-      draw_args: ""
+      amend_commit: true
