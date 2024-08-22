@@ -91,7 +91,7 @@
       
            8_layer {
         bindings = <
-        &none       &trans      &out OUT_USB  &out OUT_BLE   &kp EXCL       &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE  &trans      &trans
+        &none       &trans      &out OUT_USB  &out OUT_BLE   &kp EXCL       &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE  &trans      &trans
         &trans      &trans      &trans        &trans         &trans         &trans       &trans       &trans      &trans      &trans
         &trans      &bt BT_PRV  &bt BT_NXT    &trans         &trans         &trans       &trans       &trans      &trans      &trans
                                               &out OUT_TOG   &bt BT_CLR     &trans       &trans

@@ -89,7 +89,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {type: held}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: LSFT, h: Ctl+ A}
+  - {t: LSFT, h: tmux prefix}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -285,8 +285,8 @@ layers:
   - {t: '$$mdi:keyboard$$', s: '$$mdi:usb$$', type: sym_by_sym}
   - {t: '$$mdi:keyboard$$', s: '$$mdi:bluetooth$$', type: sym_by_sym}
   - '!'
-  - $$mdi:volume-plus$$
   - $$mdi:volume-minus$$
+  - $$mdi:volume-plus$$
   - $$mdi:volume-mute$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
